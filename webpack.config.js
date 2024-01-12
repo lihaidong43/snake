@@ -50,7 +50,7 @@ module.exports = [
       new HtmlWebpackPlugin({
         title: 'H5小游戏100例: 贪吃蛇',
         template: './src/snake.html',
-        filename: './dist/snake.html',
+        filename: './dist/index.html',
         inject: true
       }),
       new CopyWebpackPlugin([
