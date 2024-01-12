@@ -4,7 +4,8 @@
   "description": "贪吃蛇",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config=webpack.config.js"
+    "start": "webpack-dev-server --config=webpack.config.js",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
