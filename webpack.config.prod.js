@@ -7,7 +7,7 @@ const openBrowser = process.argv[3] === '--silence' ? false : true
 
 module.exports = [
   {
-    mode: 'development',
+    mode: 'production',
     context: __dirname,
     entry: {
       index: [
@@ -77,6 +77,5 @@ module.exports = [
       open: openBrowser,
       openPage: './dist/snake.html'
     },
-    watch: true
   }
 ]
