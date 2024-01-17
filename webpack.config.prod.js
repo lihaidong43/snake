@@ -18,7 +18,7 @@ module.exports = [
     },
     output: {
       path: __dirname + '/dist/',
-      filename: './script/[name]-[hash:16].js'
+      filename: './js/[name]-[hash:16].js',
     },
     module: {
       rules: [
@@ -50,32 +50,27 @@ module.exports = [
       new HtmlWebpackPlugin({
         title: 'H5小游戏100例: 贪吃蛇',
         template: './src/snake.html',
-        filename: './dist/index.html',
+        filename: './index.html',
         inject: true
       }),
       new CopyWebpackPlugin([
         {
           from: './src/css/snake.css',
-          to: './dist/css/snake.css'
+          to: './css/snake.css'
         },
         {
           from: './src/images/play@2x.png',
-          to: './dist/images/play@2x.png'
+          to: './images/play@2x.png'
         },
         {
           from: './src/images/pause@2x.png',
-          to: './dist/images/pause@2x.png'
+          to: './images/pause@2x.png'
         },
         {
           from: './src/images/switch@2x.png',
-          to: './dist/images/switch@2x.png'
+          to: './images/switch@2x.png'
         }
       ]),
-    ],
-    devServer: {
-      contentBase: './dist/',
-      open: openBrowser,
-      openPage: './dist/snake.html'
-    },
+    ]
   }
 ]
